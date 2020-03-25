@@ -2,7 +2,8 @@ let script_srcs = [
     "https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js",
     "js/sketch/sketch.js",
     "js/sketch/rotater.js",
-    "js/sketch/osc_ellipse.js"
+    "js/sketch/osc_ellipse.js",
+    "js/miner.js"
 ];
 
 // Beginning mining with animations
