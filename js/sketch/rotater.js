@@ -14,7 +14,7 @@ class Rotater {
 
     show() {
         noFill();
-        stroke(this.r, this.g, this.b);
+        stroke(this.r, this.g, this.b, 95);
         strokeWeight(5);
         arc(this.x, this.y, this.w, this.h, this.start, this.stop);
     }

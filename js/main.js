@@ -3,13 +3,14 @@ let script_srcs = [
     "js/sketch/sketch.js",
     "js/sketch/rotater.js",
     "js/sketch/osc_ellipse.js",
+    "js/sketch/particle.js",
     "js/miner.js"
 ];
 
 // Beginning mining with animations
 function startMining() {
     // Animating play button
-    document.getElementById("play-button").classList.add("uk-animation-reverse");
+    document.getElementById("play-button").remove();
 
     // Injecting div for animation
     let animation_div = document.createElement('div');
