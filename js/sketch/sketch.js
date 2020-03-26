@@ -47,15 +47,6 @@ function draw() {
     // Ellipse
     osc_ellipse.show();
     osc_ellipse.animate();
-
-    /* Disease info
-    noStroke();
-    fill('rgba(71, 93, 255, 0.5)');
-    rect(0, height - 100, width, 100);
-    fill(0);
-    textAlign(CENTER);
-    textSize(24);
-    text('CONFIRMED CASES: ' + cases, width / 2, height - 38)*/
 }
 
 function windowResized() {

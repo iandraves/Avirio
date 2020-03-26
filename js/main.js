@@ -10,6 +10,12 @@ let script_srcs = [
 
 // On captcha complete
 document.addEventListener("JSECaptchaPass", function(e) {
+    // Showing
+    document.getElementById('animation-btns').classList.remove('uk-hidden');
+    document.getElementById('animation-donate').classList.remove('uk-hidden');
+    document.getElementById('credits').classList.remove('uk-hidden');
+
+    // Injecting scripts
     for (let i = 0; i < script_srcs.length; i++) {
         injectScript(script_srcs[i]);
     }

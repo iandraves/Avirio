@@ -17,12 +17,28 @@
 <body class="uk-width-1-1 uk-height-1-1">
     <!-- Content -->
     <div class="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-width-1-1 uk-height-1-1 uk-animation-scale-up">
+        <!-- Title -->
         <h1 class="uk-heading-medium uk-text-center">Avirio</h1>
+
+        <!-- Initial buttons -->
         <div class="uk-flex uk-flex-inline">
-            <a href="#information-modal" uk-icon="icon: question" uk-toggle></a>
-            <a href="https://github.com/iandraves/Avirio" target="_blank" class="uk-margin-left uk-margin-right" uk-icon="icon: github"></a>
-            <a onclick="copyURL()" uk-icon="icon: forward"></a>
+            <a href="#information-modal" uk-icon="icon: question" uk-tooltip="Info" uk-toggle></a>
+            <a class="uk-margin-left uk-margin-right" href="https://github.com/iandraves/Avirio" target="_blank" uk-icon="icon: github" uk-tooltip="Github"></a>
+            <a onclick="copyURL()" uk-icon="icon: forward" uk-tooltip="Share"></a>
         </div>
+
+        <!-- Short Description -->
+        <div class="uk-width-1-4 uk-margin-top">
+            <p class="uk-text-center uk-text-break">COVID-19 relief powered by the JSEcoin block chain.</p>
+        </div>
+
+        <!-- Captcha -->
+        <div>
+            <p class="uk-text-center uk-text-meta uk-text-primary">Complete the captcha below to contribute!</p>
+            <div class="uk-flex uk-flex-center" id="JSE-captcha"></div>
+        </div>
+
+        <!-- Information Modal -->
         <div id="information-modal" class="uk-flex-top" uk-modal>
             <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
@@ -46,15 +62,26 @@
                         </div>
                     </div>
                 </div>
+                <p class="uk-hidden uk-text-meta uk-text-center" id="credits">A project by Ian Draves</p>
             </div>
         </div>
-        <div class="uk-width-1-4 uk-margin-top">
-            <p class="uk-text-center uk-text-break">COVID-19 relief powered by the JSEcoin block chain.</p>
-        </div>
-        <div>
-            <p class="uk-text-center uk-text-meta uk-text-primary">Complete the captcha below to contribute!</p>
-            <div class="uk-flex uk-flex-center" id="JSE-captcha"></div>
-        </div>
+    </div>
+
+    <!-- Credit -->
+    <p class="uk-position-bottom-center uk-text-meta uk-margin-bottom uk-animation-fade">A project by Ian Draves</p>
+
+    <!-- Animation buttons -->
+    <div id="animation-btns" class="uk-hidden uk-flex-top uk-position-top-right uk-margin-top uk-margin-right" style="z-index: 1000; position: relative">
+        <a href="#information-modal" uk-icon="icon: question" uk-tooltip="Info" uk-toggle></a>
+        <a class="uk-margin-left uk-margin-right" href="https://github.com/iandraves/Avirio" target="_blank" uk-icon="icon: github" uk-tooltip="Github"></a>
+        <a onclick="copyURL()" uk-icon="icon: forward" uk-tooltip="Share"></a>
+    </div>
+
+    <!-- Animation donate button -->
+    <div id="animation-donate" class="uk-hidden uk-position-bottom" style="z-index: 1000; position: relative">
+        <a href="https://covid19responsefund.org/" target="_blank">
+            <button class="uk-button uk-button-primary uk-width-1-1 uk-height-1-1">Donate to COVID-19 Solidarity Response Fund</button>
+        </a>
     </div>
 
     <!-- JSEcoin captcha script -->
