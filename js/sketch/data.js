@@ -3,7 +3,7 @@ let cases;
 let deaths;
 let recovered;
 
-$.getJSON('http://covid19api.xapix.io/v2/latest', function(data) {
+$.getJSON('https://covid19api.xapix.io/v2/latest', function(data) {
     covid_data = data;
 
     cases = addCommas(covid_data.latest['confirmed']);
