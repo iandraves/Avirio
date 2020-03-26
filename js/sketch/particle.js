@@ -37,4 +37,9 @@ class Particle {
             }
         });
     }
+
+    resize() {
+        this.x = random(0, width);
+        this.y = random(0, height);
+    }
 }

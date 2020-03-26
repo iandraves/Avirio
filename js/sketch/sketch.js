@@ -59,5 +59,20 @@ function draw() {
 }
 
 function windowResized() {
+    // Resizing canvas
     resizeCanvas(windowWidth, windowHeight);
+
+    // Resizing particles
+    for (let i = 0; i < particles.length; i++) {
+        particles[i].resize();
+    }
+
+    // Resizing rotaters
+    innermost_rotater.resize();
+    inner_rotater.resize();
+    outer_rotater.resize();
+    outermost_rotater.resize();
+
+    // Resizing ellipse
+    osc_ellipse.resize();
 }
