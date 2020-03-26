@@ -28,7 +28,7 @@ function injectScript(script_src) {
 // Copy share url
 function copyURL() {
     navigator.clipboard.writeText('iandraves.github.io/Avirio').then(function() {
-        UIkit.notification("<span uk-icon='icon: check'></span> Share link copied!");
+        UIkit.notification("<span uk-icon='icon: check'></span> Share link copied to clipboard!");
     }, function() {
         UIkit.notification("<span uk-icon='icon: warning'></span> Could not copy share link!");
     });
