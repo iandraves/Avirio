@@ -24,3 +24,12 @@ function injectScript(script_src) {
     };
     (document.head || document.documentElement).appendChild(script_to_inject);
 }
+
+// Copy share url
+function copyURL() {
+    navigator.clipboard.writeText('iandraves.github.io/Avirio').then(function() {
+        UIkit.notification("<span uk-icon='icon: check'></span> Share link copied!");
+    }, function() {
+        UIkit.notification("<span uk-icon='icon: warning'></span> Could not copy share link!");
+    });
+}
