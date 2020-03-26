@@ -4,27 +4,16 @@ let script_srcs = [
     "js/sketch/rotater.js",
     "js/sketch/osc_ellipse.js",
     "js/sketch/particle.js",
-    "js/miner.js"
+    'js/sketch/data.js',
+    'js/miner.js'
 ];
 
-// Beginning mining with animations
-function startMining() {
-    // Animating play button
-    document.getElementById("play-button").remove();
-
-    // Injecting div for animation
-    let animation_div = document.createElement('div');
-    animation_div.class = "sketch";
-    animation_div.onload = function() {
-        this.remove();
-    };
-    (document.body || document.documentElement).appendChild(animation_div);
-
-    // Injecting miner & animation scripts
+// On captcha complete
+document.addEventListener("JSECaptchaPass", function(e) {
     for (let i = 0; i < script_srcs.length; i++) {
         injectScript(script_srcs[i]);
     }
-}
+}, false);
 
 // Inject script on call
 function injectScript(script_src) {
