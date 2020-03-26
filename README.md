@@ -2,9 +2,10 @@
 
 A COVID-19 relief website powered by the JSEcoin block chain where all profits are donated to the World Health Organization's COVID-19 Solidarity Response Fund. You can visit the website [here](https://iandraves.github.io/Avirio).
 
-<img src="img/jsecoin.png" width="30%" style="margin-right: 15px; display:inline-block">
-
-<img src="img/who.png" width="30%" style="display:inline-block">
+<div style="display:inline-block">
+    <img src="img/jsecoin.png" width="30%" style="margin-right: 15px; display:inline-block">
+    <img src="img/who.png" width="30%" style="display:inline-block">
+</div>
 
 ## More Info
 
@@ -20,4 +21,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Thank you for contributing!
 
 ## License
-[Apacha-2.0](https://choosealicense.com/licenses/apache-2.0/)
+[Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
