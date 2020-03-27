@@ -19,8 +19,10 @@ function setup() {
     osc_ellipse = new OscEllipse();
 
     // Creating particles
-    for (let i = 0; i < width / 10; i++) {
-        particles.push(new Particle());
+    if (!isMobile) {
+        for (let i = 0; i < width / 10; i++) {
+            particles.push(new Particle());
+        }
     }
 }
 
@@ -28,10 +30,12 @@ function draw() {
     background(255);
 
     // Particle system
-    for (let i = 0; i < particles.length; i++) {
-        particles[i].createParticle();
-        particles[i].moveParticle();
-        particles[i].joinParticles(particles.slice(i));
+    if (!isMobile) {
+        for (let i = 0; i < particles.length; i++) {
+            particles[i].createParticle();
+            particles[i].moveParticle();
+            particles[i].joinParticles(particles.slice(i));
+        }
     }
 
     // Rotaters
@@ -54,8 +58,10 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 
     // Resizing particles
-    for (let i = 0; i < particles.length; i++) {
-        particles[i].resize();
+    if (!isMobile) {
+        for (let i = 0; i < particles.length; i++) {
+            particles[i].resize();
+        }
     }
 
     // Resizing rotaters
