@@ -2,7 +2,7 @@
 
 A COVID-19 relief website powered by the JSEcoin block chain where all profits are donated to the World Health Organization's COVID-19 Solidarity Response Fund. You can visit the website [here](https://iandraves.github.io/Avirio).
 
-## More Info
+## More info
 
 Avirio is an open-source project aimed at leveraging a small portion of your computer's resources to make a big difference in relief efforts for the novel coronavirus. Thanks to the efficiency of the JSEcoin block chain, it is possible to do effective web-based crypto-mining. This means that by simply letting Avirio run in your browser you are donating to COVID-19 research & relief because 100% of profits are donated to the World Health Organization's COVID-19 Solidarity Response Fund.
 
@@ -14,8 +14,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Thank you for contributing!
 
-## Support Me
+## Support me
 Like my work? Please consider [supporting me](https://paypal.me/iandraves).
 
 ## License
-[Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
+[The Unlicense](https://choosealicense.com/licenses/unlicense/)
