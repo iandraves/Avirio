@@ -14,5 +14,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Thank you for contributing!
 
+## Support Me
+Like my work? Please consider [supporting me](https://paypal.me/iandraves).
+
 ## License
 [Apache-2.0](https://choosealicense.com/licenses/apache-2.0/)
