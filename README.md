@@ -14,8 +14,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Thank you for contributing!
 
-## Like my work?
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H71K4IH)
-
 ## License
 [The Unlicense](https://choosealicense.com/licenses/unlicense/)
