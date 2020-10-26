@@ -1,6 +1,6 @@
 # Avirio
 
-## WARNING - JSEcoin is deprecated - Avirio is not currently functioning!
+## WARNING - JSEcoin is no longer in service due to lack of funding - Avirio is not currently functioning!
 
 A COVID-19 relief website powered by the JSEcoin block chain where all profits are donated to the World Health Organization's COVID-19 Solidarity Response Fund. You can visit the website [here](https://iandraves.github.io/Avirio).
 
@@ -12,9 +12,11 @@ Avirio is an open-source project aimed at leveraging a small portion of your com
 ![Screenshot of webpage](img/screenshot.png)
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Thank you for contributing!
 
 ## License
-[GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/)
+
+This repository is licensed with the [GNU GPLv3](LICENSE) license.
